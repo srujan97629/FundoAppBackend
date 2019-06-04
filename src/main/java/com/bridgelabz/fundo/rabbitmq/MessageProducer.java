@@ -13,8 +13,8 @@ public class MessageProducer {
 
 	@Autowired
 	private AmqpTemplate amqpTemplate;	
-	private String exchangeName = "Message-Exchange";
-	private String routingKey = "Message-Key";
+	private String exchangeName = "messageExchange";
+	private String routingKey = "messageKey";
 
 	public void sendMessage(EmailIdDto message)
 	{
