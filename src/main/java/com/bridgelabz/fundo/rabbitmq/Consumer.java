@@ -13,7 +13,7 @@ public class Consumer{
 	 @Autowired
 	    private EmailService emailService;
 	 
-	@RabbitListener(queues="messageQueue")
+	//@RabbitListener(queues="messageQueue")
 	public void reciveMessage(EmailIdDto message)  {
 		System.out.println("received msg : "+message);
 		emailService.sendMail(message);
